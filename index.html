@@ -7,10 +7,22 @@
     <link rel="stylesheet" href="style.css" />
     <title>secret</title>
   </head>
-  <body>
+  <body id="body">
     <header>
       <h1>Find out the latent number</h1>
-      <p class="between">(Between 1 and 15)</p>
+      <p class="between" id="rangeshow">Between 1 and 15</p>
+
+      <label class="between" for="level" id="levelLabel"> ⚙️Level</label>
+
+      <ul class="between" id="level">
+        <li id="levelss">
+          Levels
+          <a class="leveOption" id="easy" href="#">Easy</a>
+          <a class="leveOption" id="medium" href="#">Medium</a>
+          <a class="leveOption" id="hard" href="#">Hard</a>
+        </li>
+      </ul>
+
       <button class="btn again">Again!</button>
     </header>
     <main>
@@ -20,7 +32,7 @@
       </section>
       <section class="right">
         <p class="message">Start guessing...</p>
-        <p class="label-score"> Score: <span class="score">20</span></p>
+        <p class="label-score">Score: <span class="score">20</span></p>
         <p class="label-highscore">
           🥇 Highscore: <span class="highscore">0</span>
         </p>
